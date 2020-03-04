@@ -1,9 +1,3 @@
-/**
- * Copyright 2004-present Facebook. All Rights Reserved.
- *
- * @format
- */
-
 'use strict';
 
 var flowParser = require('flow-parser');

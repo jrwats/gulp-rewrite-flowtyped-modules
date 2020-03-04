@@ -1,10 +1,5 @@
-/**
- * Copyright 2004-present Facebook. All Rights Reserved.
- *
- * @emails oncall+internationalization
- * @format
- */
 'use strict';
+
 const Rewriter = require('../Rewriter');
 
 describe('Rewriter', () => {
