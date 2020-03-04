@@ -9,7 +9,7 @@
     "through2": "^3.0.1"
   },
   "engines": {
-    "node": ">= 10.4.0"
+    "node": ">=6.0"
   },
   "keywords": [
     "gulpplugin",
