@@ -6,7 +6,7 @@ var flowParser = require('flow-parser');
  * Runs the flow-parser on a given JavaScript file and rewrites modules
  * according to rewrite rules passed into options:
  *
- *  prefix: module prefix defualts to './', (not used when modules are mapped)
+ *  prefix: module prefix defaults to './', (not used when modules are mapped)
  *     map: module => rewriteModule map
  *    flow: options to pass to the flow-parser on parse(...)
  */
