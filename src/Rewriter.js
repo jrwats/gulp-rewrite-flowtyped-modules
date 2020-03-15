@@ -50,8 +50,8 @@ class Rewriter {
       return;
     }
     const module = this._opts.map[ast.value] || this._opts.prefix + ast.value;
-    const quote = ast.raw[0]; // grab the quote off the string
-    this._dst += this._src.substring(this._idx, ast.range[0]) + quote + module + quote;
+    const replacement = ast.raw[0] + module + ast.raw[0]; // add quotes
+    this._dst += this._src.substring(this._idx, ast.range[0]) + replacement;
     this._idx = ast.range[1];
   }
 }
