@@ -18,6 +18,10 @@ class Rewriter {
     this._dst = ''; // destination for new rewritten source
   }
 
+  static rewrite(src, opts) {
+    return (new Rewriter(src, opts)).rewrite();
+  }
+
   rewrite() {
     this._rewrite(flowParser.parse(this._src, this._opts.flow));
     return this._dst + this._src.substr(this._idx);
